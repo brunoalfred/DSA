@@ -61,6 +61,37 @@ void insertAfter (Node* prev_node, int new_data){
 }
 
 
+void append(Node** head_ref, int new_data){
+	
+	// 1. allocate node
+	Node* new_node = new Node();
+
+	// Used in step 5
+	Node* last_ref = *head_ref;
+
+	//2. Give data to the New Node
+	new_node -> data = new_data;
+
+	// 3. Assign NULL to the new Node since its the last
+	new_node -> next = NULL;
+
+	// 4. If the LInked list is empty make the New Node a head
+	if(*head_ref == NULL){
+		*head_ref = new_node;
+		return;
+	}
+
+	// 5. If the linked list has some Nodes the traverse till the last Node
+	while (last_ref->next != NULL){
+		last_ref = last_ref -> next
+	}
+
+	// 6. Change next of last node to point to the new node
+	last_ref -> next = new_node;
+
+
+}
+
 int main(int argc, char const *argv[])
 {
 	/* code */
