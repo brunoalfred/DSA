@@ -2,10 +2,17 @@
 
 using namespace std;
 
-
-struct node
+class Node
 {
-	int number;
-	
+public:
+	 int data;
+	Node * next;
 	
 };
+
+int main(int argc, char const *argv[])
+{
+	/* code */
+	
+	return 0;
+}
