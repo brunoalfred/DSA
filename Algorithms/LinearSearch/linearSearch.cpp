@@ -25,7 +25,7 @@ int arr[] = {900, 100, 588, 7482, 829, 800, 700, 100};
 int n = (sizeof(arr) / sizeof(int));
 
     int found = search(arr, n,900);
-cout << found << endl;
+    cout << found << endl;
 
 
 }
