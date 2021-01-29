@@ -1,5 +1,6 @@
 #include <iostream>
 #include <fstream>
+#include<vector>
 
 using namespace std;
 
@@ -24,17 +25,22 @@ int main()
         cout << "The file is not opened" << endl;
     }
 
-    string first_name;
-    string last_name;
-    string phone;
-    string gender;
+    string first_name, last_name,phone,gender;
 
-    string line;
     while (!list.eof())
     {
+
+        string line;
         getline(list, line);
 
-        cout << line << endl;
+      
+        string mistari = line;
+        
+        
+
+        cout << mistari << endl;
+        
     }
+
     list.close();
 }
