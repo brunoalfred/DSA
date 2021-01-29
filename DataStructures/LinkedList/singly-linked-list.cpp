@@ -83,7 +83,7 @@ void append(Node** head_ref, int new_data){
 
 	// 5. If the linked list has some Nodes the traverse till the last Node
 	while (last_ref->next != NULL){
-		last_ref = last_ref -> next
+		last_ref = last_ref -> next;
 	}
 
 	// 6. Change next of last node to point to the new node
