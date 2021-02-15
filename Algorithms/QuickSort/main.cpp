@@ -51,7 +51,7 @@ void quickSort(int array[], int low, int high) {
 
 // Driver code
 int main() {
-    int data[] = {8, 7, 6, 1, 0, 9, 5};
+    int data[] = {8, 7, 6, 1, 0, 9, 2};
     int n = sizeof(data) / sizeof(data[0]);
     quickSort(data, 0, n - 1);
     cout << "Sorted array in ascending order: \n";
